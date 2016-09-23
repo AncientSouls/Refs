@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/AncientSouls/Refs/issues"
   },
-  "main": "./lib/index.js",
+  "main": "./refs.js",
   "directories": {
     "doc": "doc",
     "test": "tests"
