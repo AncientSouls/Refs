@@ -67,6 +67,19 @@ Refs.prototype.storage = function(ref) {
   return this.storages[_ref[0]];
 };
 
+Refs.prototype.collection = Refs.prototype.storage;
+
+/**
+ * @memberof Refs
+ * @param {String} ref
+ * @return {String} id
+ */
+Refs.prototype.id = function(ref) {
+  var _ref = this.parse(ref);
+  if (!_ref) return undefined;
+  return _ref&&_ref[1]?_ref[1]:undefined;
+};
+
 /**
  * Callback from get method.
  *
