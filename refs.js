@@ -17,18 +17,29 @@ var Refs = function(storages, getters) {
  * @param {String} id
  * @return {String} ref
  * @description `refs.generate('items', 'abc'); // 'items/abc'`
+ * @throws StorageName must be a string!
+ * @throws Id must be a string!
  */
 Refs.prototype.generate = function(storageName, id) {
+  if (typeof(storageName) != 'string') {
+    throw new Error('StorageName must be a string!');
+  }
+  if (typeof(id) != 'string') {
+    throw new Error('Id must be a string!');
+  }
   return storageName+'/'+id;
 };
 
 /**
  * @memberof Refs
  * @param {String} ref
- * @return {String[]} _ref
+ * @return {String[]|undefined} [_ref]
  * @description `refs.parse('items/abc'); // ['items','abc']`
  */
 Refs.prototype.parse = function(id) {
+  if (typeof(id) != 'string') {
+    return undefined;
+  }
   return id.split('/');
 };
 
@@ -36,20 +47,23 @@ Refs.prototype.parse = function(id) {
  * @memberof Refs
  * @param {String} ref
  * @param {Refs~callback} [callback]
+ * @return {Object|undefined} [document]
  * @description `refs.get('items/abc'); // 123`
  */
 Refs.prototype.get = function(ref, callback) {
   var _ref = this.parse(ref);
+  if (!_ref) return undefined;
   return this.getters[_ref[0]](_ref[1], callback);
 };
 
 /**
  * @memberof Refs
  * @param {String} ref
- * @return {*} storage
+ * @return {*} [storage]
  */
 Refs.prototype.storage = function(ref) {
   var _ref = this.parse(ref);
+  if (!_ref) return undefined;
   return this.storages[_ref[0]];
 };
 
