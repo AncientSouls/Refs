@@ -1,6 +1,6 @@
 {
   "name": "ancient-refs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Multi-storage ids syntax, parse and get methods.",
   "keywords": [
     "javascript",
