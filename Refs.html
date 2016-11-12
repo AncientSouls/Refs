@@ -23,7 +23,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Refs.html">Refs</a><ul class='methods'><li data-type='method'><a href="Refs.html#generate">generate</a></li><li data-type='method'><a href="Refs.html#get">get</a></li><li data-type='method'><a href="Refs.html#id">id</a></li><li data-type='method'><a href="Refs.html#parse">parse</a></li><li data-type='method'><a href="Refs.html#storage">storage</a></li></ul></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Refs.html">Refs</a><ul class='methods'><li data-type='method'><a href="Refs.html#generate">generate</a></li><li data-type='method'><a href="Refs.html#get">get</a></li><li data-type='method'><a href="Refs.html#parse">parse</a></li><li data-type='method'><a href="Refs.html#storage">storage</a></li></ul></li></ul>
 </nav>
 
 <div id="main">
@@ -245,7 +245,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line21">line 21</a>
+        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line23">line 23</a>
     </li></ul></dd>
     
 
@@ -266,6 +266,28 @@
 
 
 
+<h5>Throws:</h5>
+<ul>
+        <li>
+
+    <div class="param-desc">
+    
+        <p>StorageName must be a string!</p>
+    
+    </div>
+
+</li>
+    
+        <li>
+
+    <div class="param-desc">
+    
+        <p>Id must be a string!</p>
+    
+    </div>
+
+</li>
+    </ul>
 
 
 <h5>Returns:</h5>
@@ -298,7 +320,7 @@
 
     
 
-    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(ref, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(ref, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object|undefined}</span></h4>
 
     
 
@@ -441,134 +463,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line41">line 41</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="id"><span class="type-signature"></span>id<span class="signature">(ref)</span><span class="type-signature"> &rarr; {String}</span></h4>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>ref</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line63">line 63</a>
+        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line53">line 53</a>
     </li></ul></dd>
     
 
@@ -595,7 +490,7 @@
 
         
 <div class="param-desc">
-    <p>id</p>
+    <p>[document]</p>
 </div>
 
 
@@ -606,7 +501,10 @@
     </dt>
     <dd>
         
-<span class="param-type">String</span>
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">undefined</span>
 
 
     </dd>
@@ -621,7 +519,7 @@
 
     
 
-    <h4 class="name" id="parse"><span class="type-signature"></span>parse<span class="signature">(ref)</span><span class="type-signature"> &rarr; {Array.&lt;String>}</span></h4>
+    <h4 class="name" id="parse"><span class="type-signature"></span>parse<span class="signature">(ref)</span><span class="type-signature"> &rarr; {Array.&lt;String>|undefined}</span></h4>
 
     
 
@@ -721,7 +619,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line31">line 31</a>
+        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line39">line 39</a>
     </li></ul></dd>
     
 
@@ -748,7 +646,7 @@
 
         
 <div class="param-desc">
-    <p>_ref</p>
+    <p>[_ref]</p>
 </div>
 
 
@@ -760,6 +658,9 @@
     <dd>
         
 <span class="param-type">Array.&lt;String></span>
+|
+
+<span class="param-type">undefined</span>
 
 
     </dd>
@@ -870,7 +771,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line51">line 51</a>
+        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line64">line 64</a>
     </li></ul></dd>
     
 
@@ -897,7 +798,7 @@
 
         
 <div class="param-desc">
-    <p>storage</p>
+    <p>[storage]</p>
 </div>
 
 
@@ -1074,7 +975,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line68">line 68</a>
+        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line70">line 70</a>
     </li></ul></dd>
     
 
@@ -1248,7 +1149,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line76">line 76</a>
+        <a href="refs.js.html">refs.js</a>, <a href="refs.js.html#line78">line 78</a>
     </li></ul></dd>
     
 
@@ -1312,7 +1213,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.1</a> on Thu Sep 29 2016 11:29:21 GMT+0000 (UTC) using the Minami theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Sat Nov 12 2016 16:45:28 GMT+0000 (UTC) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
